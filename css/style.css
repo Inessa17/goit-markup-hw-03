@@ -16,7 +16,6 @@
   --border-second-color: #EEEEEE;
 }
 
-
 *{
   box-sizing: border-box;
 }
@@ -45,7 +44,8 @@ ul {
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
-  outline: 1px solid red;
+
+  /* outline: 1px solid red; */
 }
 
 .visually-hidden {
