@@ -15,6 +15,16 @@
   --border-color:#ECECEC;
 }
 
+*{
+  box-sizing: border-box;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 h1,
 h2,
 h3,
@@ -70,14 +80,7 @@ ul {
   background-color: var(--primary-bg-color);
 }
 
-.section-benefits {
-  padding-top: 94px;
-}
-.section .services,
-.section .team, 
-.section .portfolio {
-  padding: 94px;
-}
+
 
 /* Header styles */
 
@@ -196,7 +199,7 @@ ul {
   width: 696px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
  
   font-weight: 900;
   font-size: 44px;
@@ -207,17 +210,12 @@ ul {
   color: var(--main-color);
 }
 
-  /* padding: 200px 252px; */
-  /* margin-bottom: -40px; */
-   /* padding: 200px 252px 280px; */
-
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
 }
   
-
 .hero-button {
   padding: 10px 32px;
   font-weight: 700;
@@ -245,15 +243,26 @@ ul {
 
 
 /* Benefits Styles */
+.section-benefits {
+  padding-top: 94px;
+}
+
+.section-services,
+.section-team, 
+.section-portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+} 
+
  .benefits-list {
   display: flex;
-  margin-right: -30px;
+  margin-left: -30px;
   margin-bottom: 0;
  }
 
  .benefits-list .item {
   width: calc((100% - 90px) / 4);
-  margin-right: 30px;
+  margin-left: 30px;
 }
 
 .benefits-list .item:last-child,
@@ -278,7 +287,6 @@ ul {
   letter-spacing: var(--main-letter-spacing);
 }
 
-
 /* Services styles */
 .services-list {
   display: flex;
@@ -301,21 +309,19 @@ ul {
 
 
  /* Team styles */
- .section-team {
+ .section.team {
   background-color: var(--team-bg-color);
  }
  
 .team-list {
   display: flex;
   align-items: center;
-  text-align: center;
   margin-right: -30px;
 }
 
 .team-list .item {
-  width: calc((100% - 120px) / 4);
+  width: calc((100% - 90px) / 4);
   margin-right: 30px;
-  padding-bottom: 94px;
 }
 
 .team-list .title {
@@ -365,6 +371,12 @@ ul {
 }
 
 /* Portfolio styles */
+.flex-container .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
 .flex-button {
   display: flex;
   justify-content: center;
@@ -376,10 +388,7 @@ ul {
   margin-left: 8px;
 }
 
-.flex-container .list {
-  display: flex;
-  flex-wrap: wrap;
-}
+
 
 .flex-projects .title {
   padding-top: 20px;
