@@ -44,7 +44,7 @@ ul {
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
-
+  
   /* outline: 1px solid red; */
 }
 
@@ -109,12 +109,6 @@ ul {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-
-  /* font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: var(--primary-title-color);  */
 }
 
 .contacts-nav {
@@ -214,27 +208,36 @@ ul {
 }
   
 .hero-button {
-  padding: 10px 32px;
+  display: inline-block;
+  /* min-width: 200px; */
+  text-align: center;
+
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+
   font-weight: 700;
-  font-size: 16px; */
+  font-size: 16px; 
   line-height: calc(30 / 16);
   align-items: center;
   letter-spacing: 0.06em;
 
-  color: var(--main-color);
-  background: var(--accent-color);
-  box-shadow: 0px 4px 4px var(--button-box-shadow);
-  border-radius: 4px;
-
   font-family: inherit;
   cursor: pointer;  
-  color:
+  color: var(--main-color);
+  background: var(--accent-color);
+  border-radius: 4px;
+  border: none;
 }
+
 
 .hero-button:hover,
 .hero-button:focus {
   color: var(--main-color);
   background: var(--button-shadow-bg);
+  box-shadow: 0px 4px 4px var(--button-box-shadow);
+
 } 
 
 
@@ -321,9 +324,13 @@ ul {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list .title {
-  margin-top: 30px;
-  justify-content: center;
+.team-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  
+}
+.team-name.title {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -331,13 +338,14 @@ ul {
   letter-spacing: var(--main-letter-spacing);
 }
 
-.team-list .text {
-  margin-top: 10px;
-  margin-bottom: 30px;
+.team-position.text {
+  font-weight: 400;
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
+  letter-spacing: var(--main-letter-spacing);
 }
+
 
 /* Footer styles */
  .page-footer {
@@ -374,13 +382,18 @@ ul {
   flex-wrap: wrap;
 }
 
-
-.flex-projects .title {
+.flex-text {
   padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
   padding-left: 24px;
-  margin-bottom: 4px;
-  align-items: center;
 
+  border-right: 1px solid var(--border-second-color);
+  border-bottom: 1px solid var(--border-second-color);
+  border-left: 1px solid var(--border-second-color);
+}
+
+.flex-text .title {
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
@@ -388,11 +401,8 @@ ul {
   color: var(--primary-title-color);
 }
 
-
-.flex-projects .text {
-  padding-left: 24px;
-  padding-bottom: 20px;
-
+.flex-text .text {
+  margin-top: 4px;
   font-weight: 400;
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -404,8 +414,7 @@ ul {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-  background: var(--main-color);
-  border: 1px solid var(--border-second-color);
+  background: var(--main-color); 
 }
 
 .flex-projects .item:nth-child(3n) {
@@ -432,6 +441,7 @@ ul {
   letter-spacing: var(--main-letter-spacing);
   border-radius: 4px;
   cursor: pointer;
+  border: none;
 } 
 
 .flex-button .item + .item {
@@ -439,6 +449,7 @@ ul {
 }
 
 .flex-button .primary {
+  padding: 6px 25px;
   color: var(--main-color);
   background: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -446,6 +457,7 @@ ul {
 }
 
 .flex-button .secondary {
+  padding: 6px 22px;
   color: var(--primary-title-color);
   background: var(--team-bg-color);
 }
